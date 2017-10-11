@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Bonus18
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //database or user input
+            Console.WriteLine("Welcome to Grand Circus Luxury Auto. Here is a list of cars you may buy:");
+
+            Console.WriteLine("tMake \tModel \tYear \tPrice \tmileage");
+            string Car = "CarType";
+            Car c1 = new Car("New! Rolls-Royce", "Ghost", 2017 , 191,000);
+
+            Car c2 = new Car("New! Ferrari", "458 Italia", 2012, 245,000);
+
+            Car c3 = new Car("New! Porsche ", "Panamera", 2017, 156,230);
+
+            Car c4 = new Car("Acura ", "NSX", 2017, 206,000, 1,000);
+
+            Car c5 = new Car("Dodge", "SRT Challenger", 2017, 57,000, 7,077);
+
+            Car c6 = new Car("Bentley", "Flying Spur", 2014, 143,900, 4,484);
+
+
+
+
+            Car[] CarList = new Car[7];// number of cars in array
+
+            CarList[0] = c1;
+            CarList[1] = c2;
+            CarList[2] = c3;
+            CarList[3] = c4;
+            CarList[4] = c5;
+            CarList[5] = c6; //These are all polymorphism examples. 
+
+            for (int i = 0; i < CarList.Length; i++)
+            {
+                CarList[i].Year.ToString();
+            }
+
+            Console.WriteLine("Which car will we be purchasing today?");
+            string UserChoice = Console.ReadLine();
+
+            if (UserChoice = Car[i])
+            {
+                Console.WriteLine("Spectacular choice! Very fitting for you!");
+            }
+
+        }
+        
+    }
+}
